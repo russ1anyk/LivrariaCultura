@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Fonte padrão do site */
+    background-color: black; /* Cor de fundo do body */
+    color: white; /* Cor do texto */
+}
+
+.cabecalho {
+    display: flex; /* Flexbox para layout em linha */
+    justify-content: center; /* Centraliza o conteúdo do cabeçalho */
+    align-items: center; /* Alinhamento vertical */
+    padding: 20px 40px; /* Espaçamento interno do cabeçalho */
+    background-color: #00bcd4; /* Fundo do cabeçalho */
+}
+
+
+.navegacao {
+    display: flex; /* Flexbox para a navegação */
+}
+
+.navegacao ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento da lista */
+    display: flex; /* Exibe os itens em linha */
+    margin: 0; /* Remove margens do ul */
+    font-size: 20px;
+}
+
+.navegacao ul li {
+    margin: 0 20px; /* Margem entre os itens do menu */
+}
+
+.navegacao ul li a {
+    color: rgb(255, 255, 255); /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s; /* Transição suave da cor */
+}
+
+.navegacao ul li a:hover {
+    color: rgb(0, 0, 0); /* Cor do texto ao passar o mouse */
+}
+
+.novidades {
+    padding: 50px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.titulo-novidades {
+    font-size: 48px; /* Tamanho da fonte */
+    font-family: 'Arial', sans-serif; /* Altere para a fonte desejada */
+    color: #00bcd4; /* Ciano */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(-20px); /* Efeito de movimento */
+    animation: aparecer 1s forwards; /* Animação */
+    animation-delay: 0.5s; /* Atraso para iniciar a animação */
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1; /* Fica visível */
+        transform: translateY(0); /* Volta à posição original */
+    }
+}
+
+
+
+.cards {
+   display: flex;
+    flex-direction: row;
+}
+
+
+
+.card2 {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(248, 248, 248, 0.1);
+    max-width: 300px;
+    margin: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card2:hover {
+    transform: scale(1.05);
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.conteudo-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.titulo-card {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.autor-card {
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.preco-card {
+    font-size: 18px;
+    color: #00bcd4; /* Ciano */
+    margin: 10px 0;
+}
+
+.botao-card {
+    background-color: #00bcd4; /* Ciano */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.botao-card:hover {
+    background-color: #0097a7; /* Cor mais escura ao passar o mouse */
+}
+
+
+.rodape {
+    background-color: #00bcd4; /* Cor ciano */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0; /* Começa invisível */
+    animation: fadeIn 1s forwards; /* Animação de fade-in */
+    animation-delay: 1s; /* Delay antes de começar a animação */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Finaliza totalmente visível */
+    }
+}
+
+.conteudo-rodape {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.metodos-pagamento {
+    margin-top: 10px;
+}
+
+.icone-pagamento {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    margin: 0 10px;
+}
