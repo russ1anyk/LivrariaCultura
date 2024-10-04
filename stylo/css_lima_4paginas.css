@@ -1,0 +1,61 @@
+html,
+body {
+    height: 100%;
+}
+
+.dados form label {
+    display: flex;
+    justify-content:center;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dados {
+    width: 850px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 360px;
+    padding-top: 50px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgba(3, 157, 247, 0.781);
+    color: rgb(255, 255, 255);
+    /*glassmorphism*/
+    background: rgba(5, 215, 255, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.dados form input {
+    width: 500px;
+    height: 45px;
+    font-size: 20px;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.entrar {
+    background-color: rgb(1, 255, 1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.entrar:hover {
+    box-shadow: 3px 5px 5px;
+}
+
+body {
+    background-image: url(https://img2.migalhas.com.br/_MEDPROC_/https__img.migalhas.com.br__SL__gf_base__SL__empresas__SL__MIGA__SL__imagens__SL__2023__SL__04__SL__04__SL__cropped_wjsvjh5l.lb5.jpeg._PROC_CP75CCH31622400.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lembrar {
+    
+}
