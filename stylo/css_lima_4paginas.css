@@ -56,6 +56,62 @@ body {
     background-repeat: no-repeat;
 }
 
-.lembrar {
-    
+.cabecalho {
+    display: flex; /* Flexbox para layout em linha */
+    justify-content: center; /* Centraliza o conteúdo do cabeçalho */
+    align-items: center; /* Alinhamento vertical */
+    padding: 20px 40px; /* Espaçamento interno do cabeçalho */
+    background-color: #00bcd4; /* Fundo do cabeçalho */
+}
+
+
+.navegacao {
+    display: flex; /* Flexbox para a navegação */
+}
+
+.navegacao ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento da lista */
+    display: flex; /* Exibe os itens em linha */
+    margin: 0; /* Remove margens do ul */
+    font-size: 20px;
+}
+
+.navegacao ul li {
+    margin: 0 20px; /* Margem entre os itens do menu */
+}
+
+.navegacao ul li a {
+    color: rgb(255, 255, 255); /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s; /* Transição suave da cor */
+}
+
+.navegacao ul li a:hover {
+    color: rgb(0, 0, 0); /* Cor do texto ao passar o mouse */
+}
+
+.rodape {
+    background-color: #00bcd4; /* Cor ciano */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0; /* Começa invisível */
+    animation: fadeIn 1s forwards; /* Animação de fade-in */
+    animation-delay: 1s; /* Delay antes de começar a animação */
+}
+
+.conteudo-rodape {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.metodos-pagamento {
+    margin-top: 10px;
+}
+
+.icone-pagamento {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    margin: 0 10px;
 }
