@@ -87,6 +87,7 @@ body {
     text-decoration: none; /* Remove o sublinhado dos links */
     font-weight: bold; /* Texto em negrito */
     transition: color 0.3s; /* Transição suave da cor */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navegacao ul li a:hover {
