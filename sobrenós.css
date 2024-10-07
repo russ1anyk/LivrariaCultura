@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Fonte padrão do site */
+    background-color: black; /* Cor de fundo do body */
+    color: white; /* Cor do texto */
+    
+}
+
+.cabecalho {
+    display: flex; /* Flexbox para layout em linha */
+    justify-content: center; /* Centraliza o conteúdo do cabeçalho */
+    align-items: center; /* Alinhamento vertical */
+    padding: 20px 40px; /* Espaçamento interno do cabeçalho */
+    background-color: #00bcd4; /* Fundo do cabeçalho */
+}
+
+
+.navegacao {
+    display: flex; /* Flexbox para a navegação */
+}
+
+.navegacao ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento da lista */
+    display: flex; /* Exibe os itens em linha */
+    margin: 0; /* Remove margens do ul */
+    font-size: 20px;
+}
+
+.navegacao ul li {
+    margin: 0 20px; /* Margem entre os itens do menu */
+}
+
+.navegacao ul li a {
+    color: rgb(255, 255, 255); /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Texto em negrito */
+    transition: color 0.3s; /* Transição suave da cor */
+}
+
+.navegacao ul li a:hover {
+    color: rgb(0, 0, 0); /* Cor do texto ao passar o mouse */
+}
+.conteudo-sobre {
+    position: relative; /* Permite usar o pseudo-elemento */
+    height: 100vh; /* Altura total da janela */
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center;
+    overflow: hidden;
+}
+
+.conteudo-sobre::before {
+    content: ''; /* Necessário para o pseudo-elemento */
+    position: absolute; /* Posiciona o pseudo-elemento */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./img/FUNDOLIVRARIA.jpg'); /* Substitua pelo seu caminho de imagem */
+    background-size: cover; /* Cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    opacity: 0.3; /* Define a opacidade da imagem */
+    z-index: 0; /* Coloca atrás do conteúdo */
+}
+
+.titulo-animado {
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transform: translateY(50px); /* Começa deslocado para baixo */
+    opacity: 0; /* Começa invisível */
+    animation: aparecer 1.5s forwards; /* Animação de aparecer */
+    z-index: 1; /* Coloca na frente do pseudo-elemento */
+}
+
+@keyframes aparecer {
+    0% {
+        transform: translateY(50px); /* Início: deslocado para baixo */
+        opacity: 0; /* Início: invisível */
+    }
+    100% {
+        transform: translateY(0); /* Fim: posição original */
+        opacity: 1; /* Fim: visível */
+    }
+}
+
+
+
+
+
+.titulo {
+    color: cyan;
+    transition: transform 0.3s, color 0.3s; /* Efeito suave */
+    display: flex;                     /* Utiliza Flexbox */
+    justify-content: center;           /* Centraliza horizontalmente */
+    align-items: center;               /* Centraliza verticalmente */
+    height: 4vh;                     /* Altura total da janela */
+    margin: 0;                         /* Remove margens padrão */
+    font-size: 40px;
+}
+
+.titulo:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do texto */
+    color: #00bfff; /* Cor ao passar o mouse */
+}
+
+.linha-separadora {
+    width: 100%;                      /* Largura total */
+
+    border: none;                     /* Remove a borda padrão */
+    border-top: 2px solid cyan;      /* Linha superior de 2px de espessura e cor ciano */
+    margin: 20px 0;                   /* Espaçamento vertical */
+}
+
+
+.texto {
+    justify-content: center; 
+    text-align: justify;              /* Centraliza o texto dentro do parágrafo */
+    padding: 0 200px; 
+    margin: 20px 0;
+    display: flex;  
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 25px;
+}
+
+.rodape {
+    background-color: #00bcd4; /* Cor ciano */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0; /* Começa invisível */
+    animation: fadeIn 1s forwards; /* Animação de fade-in */
+    animation-delay: 1s; /* Delay antes de começar a animação */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Finaliza totalmente visível */
+    }
+}
+
+.conteudo-rodape {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.metodos-pagamento {
+    margin-top: 10px;
+}
+
+.icone-pagamento {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    margin: 0 10px;
+}
