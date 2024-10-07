@@ -8,16 +8,17 @@ body {
     justify-content:center;
     padding-bottom: 20px;
     padding-top: 50px;
-    font-size: 22px;
+    font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .dados {
+    margin-bottom: 10px;
     width: 850px;
     height: 550px;
     display: flex;
     justify-content: center;
-    padding-bottom: 280px;
+    padding-bottom: 290px;
     padding-top: 50px;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,6 +44,13 @@ body {
 .entrar {
     background-color: rgb(1, 255, 1);
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    width: 100px;
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 90px;
 }
 
 .entrar:hover {
@@ -55,6 +63,8 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 
 .cabecalho {
@@ -63,6 +73,7 @@ body {
     align-items: center; /* Alinhamento vertical */
     padding: 20px 40px; /* Espaçamento interno do cabeçalho */
     background-color: #00bcd4; /* Fundo do cabeçalho */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -93,3 +104,32 @@ body {
     color: rgb(0, 0, 0); /* Cor do texto ao passar o mouse */
 }
 
+.rodape {
+    background-color: #00bcd4; /* Cor ciano */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    opacity: 0; /* Começa invisível */
+    animation: fadeIn 1s forwards; /* Animação de fade-in */
+    animation-delay: 1s; /* Delay antes de começar a animação */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Finaliza totalmente visível */
+    }
+}
+
+.conteudo-rodape {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.metodos-pagamento {
+    margin-top: 10px;
+}
+
+.icone-pagamento {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    margin: 0 10px;
+}
