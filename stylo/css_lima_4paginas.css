@@ -40,10 +40,6 @@ body {
     border-radius: 5px;
 }
 
-.dados form input, .entrar {
-    width: 100px;
-}
-
 .entrar {
     background-color: rgb(1, 255, 1);
     font-family: Arial, Helvetica, sans-serif;
