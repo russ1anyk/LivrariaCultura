@@ -6,23 +6,16 @@ body {
 }
 
 .cabecalho {
-    position: fixed; /* Fixa o header na tela */
-    top: 0; /* Fixa no topo */
-    left: 0; /* Fixa na esquerda */
-    width: 100%; /* Largura total */
-    background-color: #fff; /* Cor de fundo */
-    z-index: 1000; /* Garante que fique acima de outros elementos */
+    display: flex; /* Flexbox para layout em linha */
+    justify-content: center; /* Centraliza o conteúdo do cabeçalho */
+    align-items: center; /* Alinhamento vertical */
+    padding: 20px 40px; /* Espaçamento interno do cabeçalho */
+    background-color: #00bcd4; /* Fundo do cabeçalho */
 }
 
 
 .navegacao {
     display: flex; /* Flexbox para a navegação */
-    position: sticky 0;
-    top: 0; /* Fixa no topo */
-    left: 0; /* Fixa na esquerda */
-    width: 100%; /* Largura total */
-    background-color: #fff; /* Cor de fundo */
-    z-index: 1000; /* Garante que fique acima de outros elementos */
 }
 
 .navegacao ul {
